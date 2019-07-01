@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Survey</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">PokéFinder</h1>
+          <h2 class="lead">Fill our our 10 question survey and find out which starter is right for YOU!</h2>
+        </div>
+      </div>
+    <h4>Name (Required)</h4>
+    <input type="text" name="" id="name" class="form-control" required>
+
+    <h4><strong>Question 1</strong></h4>
+    <h4>You believe statistical superiority is the most important aspect of building a Pokémon team:</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+    <h4><strong>Question 2</strong></h4>
+    <h4>You care about how each pokémon looks:</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 3</strong></h4>
+    <h4>You think the best part of playing Pokémon is going through the single-player campaign:</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 4</strong></h4>
+    <h4>You think the best part of playing Pokémon is battling competitively with other people:</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 5</strong></h4>
+    <h4>You prefer pokemon of a specific type:</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 6</strong></h4>
+    <h4>You use the same team throughout your playthrough due to sentimental value:</h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 7</strong></h4>
+    <h4>You pay close attention to the competitive metagame of each specific game:</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 8</strong></h4>
+    <h4>You prefer to play the role of an offensive attacker:</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 9</strong></h4>
+    <h4>You prefer to play the role of a defensive tank:</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+
+    <h4><strong>Question 10</strong></h4>
+    <h4>You prefer to play the role of a status-changing support:</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3< (Neutral)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5" selected>5 (Strongly Agree)</option>
+    </select>
+</body>
+</html>
