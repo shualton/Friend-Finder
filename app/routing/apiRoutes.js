@@ -3,7 +3,7 @@ var starters =require('../data/friends.js');
 module.exports = function(app) {
 
     app.get('/api/friends', function(req, res) {
-        res.json(friends);
+        res.json(starters);
     });
 
     app.post('/api/friends', function(req, res) {
@@ -25,7 +25,25 @@ module.exports = function(app) {
             "photo": req.body.photo,
             "scores": b
         }
+        for (var i = 0; i < friends.length; i++) {
 
+            console.log(friends[i].name);
+            totalDifference = 0;
+            
+            var starterScore = starters[i].scores.reduce((a, b) => a + b, 0);
+            totalDifference += Math.abs(sum - starterScore);
+            
+            if (totalDifference <= bestMatch.friendDifference) {
+
+                bestMatch.name = friends[i].name;
+                bestMatch.photo = friends[i].photo;
+                bestMatch.friendDifference = totalDifference;
+  
+
+            }
+            console.log(totalDifference + " Total Difference");
+
+        }
         
         console.log(bestMatch);
       
