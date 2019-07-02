@@ -41,14 +41,8 @@ module.exports = function(app) {
   
 
             }
-            console.log(totalDifference + " Total Difference");
-
         }
-        
-        console.log(bestMatch);
-      
         starters.push(data);
-        console.log(data);
         res.json(bestMatch);
 
     });
